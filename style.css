@@ -7,6 +7,7 @@
     --blue: hsl(212, 86%, 64%);
     --very-dark-blue: hsl(234, 12%, 34%);
     --grayish-blue: hsl(229, 6%, 66%);
+    --shadow-grayish-blue: hsla(229, 6%, 66%, 0.5);
     --very-light-gray: hsl(0, 0%, 98%);
 
     /*typology*/
@@ -35,4 +36,99 @@ body
 main
 {
     margin: 3% 5%;
+    display: grid;
+}
+
+.heading
+{
+    text-align: center;
+}
+
+.heading .title
+{
+    font-weight: 200;
+    color: var(--very-dark-blue);
+}
+
+.title strong
+{
+    display: block;
+}
+
+.heading .description
+{
+    color: var(--grayish-blue);
+}
+
+.features
+{
+    display: grid;
+    justify-content: center;
+}
+
+.features .feature-card
+{
+    background-color: white;
+    margin: 5%;
+    padding: 3% 8%;
+    max-width: 30rem;
+    border-top: 4px solid var(--card-border, var(--grayish-blue));
+    background: var(--bg-image, none) right bottom / 50px no-repeat content-box;
+    box-shadow: 0px 10px 10px var(--shadow-grayish-blue);
+    border-radius: 12px;
+}
+
+.supervisor
+{
+    --bg-image: url(./images/icon-supervisor.svg);
+    --card-border: var(--cyan);
+}
+
+.team-builder
+{
+    --bg-image: url(./images/icon-team-builder.svg);
+    --card-border: var(--red);
+}
+
+.karma
+{
+    --bg-image: url(./images/icon-karma.svg);
+    --card-border: var(--orange);
+}
+
+.calculator
+{
+    --bg-image: url(./images/icon-calculator.svg);
+    --card-border: var(--blue);
+}
+
+.features .feature-card_heading
+{
+    color: var(--very-dark-blue);
+}
+
+.features .feature-card_description
+{
+    color: var(--grayish-blue);
+}
+
+footer
+{
+    text-align: center;
+}
+
+.attribution
+{
+    color: var(--grayish-blue);
+}
+
+.attribution a
+{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+@media screen and (max-width: 62.5 rem)
+{
+
 }
